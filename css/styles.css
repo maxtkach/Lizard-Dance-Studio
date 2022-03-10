@@ -1,0 +1,382 @@
+@import url(../css/_normalize.scss);
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p, a {
+  letter-spacing: 0.1em;
+  line-height: 1.47em;
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1.47em;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url("../images/6.jpg");
+  padding-top: 0;
+  padding-left: 0;
+  position: relative;
+  color: #fff;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  background: url("../images/bg3.png") no-repeat right top/cover;
+  width: 41%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.offer {
+  width: 445px;
+  margin-left: 200px;
+}
+
+.offer__intro {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.offer__title {
+  color: #C6FF07;
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.offer__outro {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.offer__outro span {
+  color: #638005;
+}
+
+.slides {
+  width: 405px;
+  margin-left: 200px;
+  margin-top: 140px;
+}
+
+.slides2 {
+  width: 405px;
+  margin-left: 800px;
+  margin-top: 60px;
+}
+
+.slides__item_expections {
+  background: url("../images/bg4.jpg") no-repeat center top/cover;
+  padding: 40px 75px 33px;
+}
+
+.slides__item_time {
+  background: url("../images/bg5.jpg") no-repeat center top/cover;
+  padding: 40px 75px 37px;
+}
+
+.slides__title_big {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.slides__item_exp-desc {
+  background: #638005;
+  padding: 40px;
+}
+
+.slides__text {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.promo {
+  background: #000;
+  border-radius: 50%;
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  top: 15%;
+  margin-top: -190px;
+  margin-left: 1000px;
+  z-index: 9;
+}
+
+.promo::before {
+  content: '';
+  display: block;
+  border: 1px solid rgba(198, 255, 7, 0.3);
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  left: 50%;
+  margin-left: -160px;
+  top: 50%;
+  margin-top: -160px;
+}
+
+.promo::after {
+  content: '';
+  display: block;
+  background: url("../images/glow.png") no-repeat center center;
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: 43%;
+  margin-top: -250px;
+  left: -36%;
+  margin-top: -250px;
+}
+
+.promo img {
+  z-index: 9;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 84%;
+  margin-top: -250px;
+  left: 18%;
+  margin-top: -250px;
+}
+
+.map-container {
+  margin-top: 50px;
+}
+
+.where {
+  text-align: center;
+  color: #C6FF07;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.map {
+  margin: 0px;
+  width: 783px;
+  height: 540px;
+}
+
+.map iframe {
+  width: 783px;
+}
+
+.call {
+  width: 450px;
+  height: 280px;
+  position: absolute;
+  top: 77%;
+  left: 60%;
+}
+
+.call__content {
+  padding-left: 43px;
+  border: 1px solid #638005;
+}
+
+.call__title {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.call__item {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.075em;
+}
+
+@media screen and (max-width: 1440px) {
+  .slides2 {
+    width: 405px;
+    margin-left: 651px;
+    margin-top: 60px;
+  }
+  .promo img {
+    z-index: 9;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 78%;
+    margin-top: -250px;
+    left: 10%;
+    margin-top: -168px;
+  }
+  .promo {
+    background: #000;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 15%;
+    margin-top: -179px;
+    margin-left: 890px;
+    z-index: 9;
+  }
+  .promo::after {
+    content: '';
+    display: block;
+    background: url(../images/glow.png) no-repeat center center;
+    width: 498px;
+    height: 635px;
+    position: absolute;
+    top: 43%;
+    margin-top: -250px;
+    left: -36%;
+    margin-top: -250px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media screen and (max-width: 1200px) {
+  /* Styles */
+  .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  /* Styles */
+  .container {
+    width: 960px;
+  }
+  .promo {
+    background: #000;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 15%;
+    margin-top: 26px;
+    margin-left: 659px;
+    z-index: 9;
+  }
+  .slides2 {
+    width: 405px;
+    margin-left: 545px;
+    margin-top: 60px;
+  }
+  .map iframe {
+    width: 436px;
+  }
+  .call {
+    width: 420px;
+    height: 280px;
+    position: absolute;
+    top: 77%;
+    left: 51%;
+  }
+  .promo::after {
+    content: '';
+    display: block;
+    background: url(../images/glow.png) no-repeat center center;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    left: -66%;
+    margin-top: -250px;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* Styles */
+  .container {
+    width: 720px;
+  }
+  .header::after {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .promo {
+    background: #000;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 13%;
+    margin-top: -128px;
+    margin-left: 440px;
+    z-index: 9;
+  }
+  .slides2 {
+    width: 405px;
+    margin-left: 165px;
+    margin-top: 60px;
+  }
+  .promo {
+    background: #000;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 25%;
+    margin-top: -128px;
+    margin-left: 32%;
+    z-index: 9;
+  }
+  .map iframe {
+    width: 80%;
+    margin-left: 60px;
+  }
+  .map {
+    margin: 0px;
+    width: 740px;
+    height: 540px;
+  }
+  .offer {
+    width: 759px;
+    margin-left: 0px;
+    text-align: center;
+    margin-right: 0;
+  }
+  .slides {
+    width: 405px;
+    margin-left: 165px;
+    margin-top: 453px;
+  }
+  .call {
+    width: 420px;
+    height: 280px;
+    position: relative;
+    top: 99%;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  /* Styles */
+  .container {
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  /* Styles */
+  .container {
+    width: 762px;
+  }
+  .header {
+    width: 762px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
